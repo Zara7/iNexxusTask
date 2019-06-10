@@ -50,7 +50,7 @@ code {
 }
 .main-container {
     display: grid;
-    grid-template-columns: 1.1fr 7fr 7fr;
+    grid-template-columns: 1.1fr 7fr;
     grid-template-rows: auto 1fr;
 }
 
@@ -660,7 +660,7 @@ header {
         padding: 0;
         margin: 0 auto;
     }
-    content {
+    .main-wrapper {
         grid-column-start: 1;
     }
     .grid-container {

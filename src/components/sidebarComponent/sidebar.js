@@ -11,7 +11,7 @@ class Sidebar extends React.Component {
            <span className="burger_menu" onClick={ () => this.setState({isActive: !this.state.isActive})}>
                 <i className="material-icons">menu</i>
             </span>
-            <div className= {this.state.isActive ? "is-active" : "sidebar"} >
+            <div className= {this.state.isActive ? "sidebar is-active" : "sidebar"} >
                 <span className="close" onClick={ () => this.setState({isActive: !this.state.isActive})}>
                     Close Menu 
                    <i className="material-icons">close</i>
