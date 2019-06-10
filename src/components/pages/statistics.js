@@ -9,7 +9,7 @@ import StateGrid from '../pagesComponents/gridComponent';
 class Statistics extends React.Component {
     render() {
         return(
-            <content className="statistics-container">
+            <div className="main-wrapper">
                 <div className="monthly-statistics-wrapper">
                    <Order />
                    <Delivery />
@@ -21,7 +21,7 @@ class Statistics extends React.Component {
             
                 <StateGrid />
             
-            </content>
+            </div>
         );
     }
 }

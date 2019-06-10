@@ -3,9 +3,9 @@ import React from "react";
 class Initialization extends React.Component {
     render() {
         return(
-             <content className="statistics-container">
+             <div className="main-wrapper">
                 <h1>Initialization page</h1>
-            </content>
+            </div>
         );
     }
 }

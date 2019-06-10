@@ -12,11 +12,11 @@ class StateGrid extends React.Component {
                     <div className="fitler-wrapper">
                         <div className="filter-inner">
                             <div className="label">Từ ngày</div>
-                            <input type="search" value="01/01/2019"/>
+                            <input type="search" placeholder="01/01/2019"/>
                         </div>
                         <div className="filter-inner">
                             <div className="label">Đến ngày</div>
-                            <input type="search" value="22/01/2019"/>
+                            <input type="search" placeholder="22/01/2019"/>
                         </div>
                         <button type="button">Lọc</button>
                     </div>
@@ -34,7 +34,7 @@ class StateGrid extends React.Component {
                         </div>
                         <div className="uner-info">
                             <div className="user-name">
-                                <i class="material-icons">account_box</i>
+                                <i className="material-icons">account_box</i>
                                 <div className="user-inner">
                                     <div>Nguyễn Hoa</div>    
                                     <div>DRIVERTHUANPV0</div>  
@@ -50,7 +50,7 @@ class StateGrid extends React.Component {
                         </div>
                         <div className="uner-info">
                             <div className="user-name">
-                                <i class="material-icons">account_box</i>
+                                <i className="material-icons">account_box</i>
                                 <div className="user-inner">
                                     <div>Nguyễn Hoa</div>    
                                     <div>DRIVERTHUANPV0</div>  
@@ -65,7 +65,7 @@ class StateGrid extends React.Component {
                         </div>
                         <div className="uner-info">
                             <div className="user-name">
-                                <i class="material-icons">account_box</i>
+                                <i className="material-icons">account_box</i>
                                 <div className="user-inner">
                                     <div>Nguyễn Hoa</div>    
                                     <div>DRIVERTHUANPV0</div>  
@@ -84,11 +84,11 @@ class StateGrid extends React.Component {
                 <div className="pagination-container">
                     <div>Đang hiển thị 1 tới 10 trong 57 kết quả</div>
                     <div className="pagination-inner">
-                        <button type="button"> <i class="material-icons">keyboard_arrow_left</i></button>   
+                        <button type="button"> <i className="material-icons">keyboard_arrow_left</i></button>   
                         <button type="button" className="is-active">1</button>    
                         <button type="button">2</button>    
                         <button type="button">3</button>    
-                        <button type="button"> <i class="material-icons">keyboard_arrow_right</i></button>    
+                        <button type="button"> <i className="material-icons">keyboard_arrow_right</i></button>    
                     </div>
                 </div>
             </div>

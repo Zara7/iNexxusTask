@@ -9,12 +9,12 @@ class Sidebar extends React.Component {
         return(
            <div className="sidebar-wrapper">
            <span className="burger_menu" onClick={ () => this.setState({isActive: !this.state.isActive})}>
-                <i class="material-icons">menu</i>
+                <i className="material-icons">menu</i>
             </span>
-            <sidebar className={this.state.isActive ? "is-active" : ""} >
+            <div className= {this.state.isActive ? "is-active" : "sidebar"} >
                 <span className="close" onClick={ () => this.setState({isActive: !this.state.isActive})}>
                     Close Menu 
-                   <i class="material-icons">close</i>
+                   <i className="material-icons">close</i>
                 </span>
                 <div className="main-logo"></div>
                 <nav>
@@ -49,7 +49,7 @@ class Sidebar extends React.Component {
                         </li>
                     </ul>
                 </nav>
-            </sidebar> 
+            </div> 
             </div>
         );
     }

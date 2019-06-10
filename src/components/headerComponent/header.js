@@ -11,12 +11,12 @@ class Header extends React.Component {
                 <div className="account-box">
                     <ul className="account-box-list">
                         <li>   
-                            <button type="button">
+                            <button className="notification" type="button">
                                 <i className="material-icons">notifications</i>  
                             </button>
                         </li>
                         <li>   
-                            <button type="button">
+                            <button className="message" type="button">
                                 <i className="material-icons">email</i>  
                             </button>
                         </li>

@@ -3,9 +3,9 @@ import React from "react";
 class Routing extends React.Component {
     render() {
         return(
-             <content className="statistics-container">
+             <div className="main-wrapper">
                 <h1>Routing Page</h1>
-            </content>
+            </div>
         );
     }
 }

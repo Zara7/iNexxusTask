@@ -50,7 +50,7 @@ code {
 }
 .main-container {
     display: grid;
-    grid-template-columns: 1.1fr 7fr;
+    grid-template-columns: 1.1fr 7fr 7fr;
     grid-template-rows: auto 1fr;
 }
 
@@ -69,7 +69,7 @@ code {
     padding-top: 5px;
         
 }
-sidebar nav li a {
+.sidebar nav li a {
     display: block;
     font-family: 'OpenSans-Light';
     font-size: 14px;
@@ -82,16 +82,16 @@ sidebar nav li a {
 .burger_menu {
     display: none;
 }
-sidebar nav li a.is-active {
+.sidebar nav li a.is-active {
     background: #1b64b0;
 }
-sidebar nav li a .material-icons{
+.sidebar nav li a .material-icons{
     font-size: 20px;
 }
-sidebar nav li a .material-icons:not(.arrow) {
+.sidebar nav li a .material-icons:not(.arrow) {
     padding-right: 15px;
 }
-sidebar nav li a .arrow {
+.sidebar nav li a .arrow {
     float: right;
 }
 
@@ -152,11 +152,40 @@ header {
     align-items: center;
 }
 .account-box .account-box-list li button {
+    position: relative;
     cursor: pointer;
     color: #b8b8b8;
     padding: 0 5px;
     background: none;
     border: none;
+}
+.notification:after {
+    content: '4';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 50%;
+    background: #e52435;
+}
+.message:after {
+    content: '1';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 50%;
+    background: #f6bb42;
 }
 .account-box .account-box-list li button .material-icons {
     font-size: 26px;
@@ -176,7 +205,7 @@ header {
 }
  
 /***********Main Content*******/
-content {
+.main-wrapper {
     grid-column-start: 2;
     grid-column-end: 4;
     padding: 2px 40px;
@@ -499,13 +528,13 @@ content {
 }
 
 @media screen and (max-width: 1024px) {
-    sidebar {
+    .sidebar {
         min-width: 210px;
     }
     header {
         padding: 0 5px;
     }
-    content {
+    .main-wrapper {
         padding:  2px 5px;
     }
     .monthly-statistics-inner:nth-of-type(1) {
@@ -568,7 +597,7 @@ content {
         position: relative;
         min-width: 0;
     }
-    sidebar {
+    .sidebar {
         height: 100vh;
         min-width: 300px;
         position: absolute;
@@ -611,7 +640,7 @@ content {
         cursor: pointer;
         color: #b8b8b8;
     }
-    sidebar.is-active {
+    .sidebar.is-active {
         margin-left: 0;
         -webkit-transition: margin 0.5s ease;
         -moz-transition: margin 0.5s ease;
@@ -620,7 +649,7 @@ content {
         transition: margin 0.5s ease;
         padding-top: 45px;
     }
-    sidebar.is-active .burger_menu { 
+    .sidebar.is-active .burger_menu { 
         right: 20px;
     }
     header {

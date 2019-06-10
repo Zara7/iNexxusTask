@@ -11,7 +11,9 @@ class StateChart extends React.Component {
 
 
     componentDidMount() {
-            fetch('https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Cristiano_Ronaldo/daily/20190101/20190606')
+            fetch('https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Cristiano_Ronaldo/daily/20190101/20190606' , {
+                 mode: 'cors',
+            })
               .then(response => response.json())
               .then(data => 
                     this.setState({ items: data.items })
@@ -40,6 +42,9 @@ class StateChart extends React.Component {
             <div className="chart-inner-container">
     
             <Line 
+                options={{
+                    responsive: true
+                }}
                 data={data}
             />
             </div>
