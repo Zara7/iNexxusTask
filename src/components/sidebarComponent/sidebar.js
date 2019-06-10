@@ -22,28 +22,28 @@ class Sidebar extends React.Component {
                         <li> 
                             <NavLink  to='/'>
                                 <i className="material-icons">add_circle_outline</i>  
-                                Initialization
+                                Khởi tạo
                                 <i className="material-icons arrow">keyboard_arrow_right</i> 
                             </NavLink >
                         </li>
                         <li    >   
                             <NavLink  to='/routing'>
                                 <i className="material-icons">swap_calls</i> 
-                                Routing
+                                Lộ trình
                                 <i className="material-icons arrow">keyboard_arrow_right</i> 
                             </NavLink >
                         </li>
                         <li   > 
                             <NavLink  to='/directional'> 
                                 <i className="material-icons">shuffle</i> 
-                                Directional
+                                Điều hướng
                                 <i className="material-icons arrow">keyboard_arrow_right</i> 
                             </NavLink >
                         </li>
                         <li  >   
                             <NavLink  to='/statistics'>
                                 <i className="material-icons">show_chart</i>
-                                Statistics
+                                Thông kê
                                 <i className="material-icons arrow">keyboard_arrow_right</i> 
                             </NavLink >
                         </li>
